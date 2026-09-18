@@ -13,9 +13,9 @@ async fn main() {
         // 内存占用查询接口：只读，不改变状态
         .route("/meminfo", get(api::meminfo));
 
-    // 读取HF环境端口，本地默认8084
+    // 读取HF环境端口，本地默认8085
     let port = std::env::var("PORT")
-        .unwrap_or_else(|_| "8084".to_string())
+        .unwrap_or_else(|_| "8085".to_string())
         .parse::<u16>()
         .expect("端口解析失败");
 
