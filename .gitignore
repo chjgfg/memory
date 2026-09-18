@@ -1,0 +1,7 @@
+/target
+Cargo.lock
+doc.txt
+.vscode
+app.log
+app.pid
+.omc
